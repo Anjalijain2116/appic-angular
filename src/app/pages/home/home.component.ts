@@ -10,10 +10,11 @@ import { formatDate, formatNumber } from '@angular/common';
 import { LanguageService } from '../../core/services/language.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class HomeComponent implements OnInit {
   data: string[] | undefined;

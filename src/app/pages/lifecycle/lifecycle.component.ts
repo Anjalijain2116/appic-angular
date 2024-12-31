@@ -2,10 +2,11 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentCh
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-lifecycle',
-  templateUrl: './lifecycle.component.html',
-  styleUrls: ['./lifecycle.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-lifecycle',
+    templateUrl: './lifecycle.component.html',
+    styleUrls: ['./lifecycle.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class LifecycleComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
   @Input() inputData!: string;

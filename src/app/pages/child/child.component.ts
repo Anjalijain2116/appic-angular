@@ -2,9 +2,10 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-child',
-  templateUrl: './child.component.html',
-  styleUrls: ['./child.component.scss']
+    selector: 'app-child',
+    templateUrl: './child.component.html',
+    styleUrls: ['./child.component.scss'],
+    standalone: false
 })
 export class ChildComponent implements OnInit{
   id: string | undefined;

@@ -1,7 +1,8 @@
 import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 @Directive({
-  selector: '[appIfLoggedIn]'
+    selector: '[appIfLoggedIn]',
+    standalone: false
 })
 export class IfLoggedInDirective {
   private hasView = false;
