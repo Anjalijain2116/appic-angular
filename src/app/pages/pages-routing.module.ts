@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'feature', loadChildren: () => import('../features/feature/feature.module').then(m => m.FeatureModule) },
   {path: 'login', component: LoginComponent},
   { path: 'error', component: ErrorComponent },
-  { path: '**', redirectTo: '/error' },
+  { path: '**', redirectTo: '/error' }, 
  
 ];
 
